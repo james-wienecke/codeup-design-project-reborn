@@ -82,14 +82,14 @@ a {
 .navlist  {
     text-align: center;
 }
-@media only screen and (min-width: 768px) {
-    .navlist {
-        text-align: right;
-    }
-    .title-text {
-        text-align: left;
-    }
-}
+/*@media only screen and (min-width: 768px) {*/
+/*    .navlist {*/
+/*        text-align: right;*/
+/*    }*/
+/*    .title-text {*/
+/*        text-align: left;*/
+/*    }*/
+/*}*/
 .logo-image {
     text-align: center;
 }
