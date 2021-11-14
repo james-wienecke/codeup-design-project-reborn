@@ -170,6 +170,7 @@ a {
 #md-hr {
     max-width: 100%;
 }
-.card{
+.article-card {
     background-color: var(--light-grey) !important;
+    max-width: 335px !important;
 }
