@@ -50,6 +50,7 @@ a {
 }
 .title-text {
     font-size: 48px;
+    text-align: center;
 }
 .lg-circle {
     /*Circle params*/
@@ -77,20 +78,21 @@ a {
     width: 20px;
     height: 20px;
 }
-/* the navlist class is a class for the special case of the navbar/header for the small display layout. */
+/* .navlist is the main selector for the "nav list" of items (services, work, etc.) */
 .navlist  {
-    /* this margin is applied to the ul element itself to position it roughly halfway from the top of the banner*/
-    margin: .35em 0 0 0;
+    text-align: center;
+
 }
-.navlist li {
-    /* essential styling for the list elements to keep them nicely spaced in this layout */
-    list-style: none;
-    margin: .5em;
+.logo-image {
+    text-align: center;
 }
-#xs-logo, #sm-logo, #md-logo {
+.logo-image img {
     width: 105px;
-    max-width: 100%;
-    z-index: 2;
+    height: 105px;
+    max-width: 105px;
+    max-height: 105px;
+    margin: auto;
+    display: block;
 }
 /* special styling for the md+ layout to position the "codeup design" title element */
 .md-logo-case {
