@@ -3,6 +3,16 @@
 /* To use:
 font-family: 'Abel', sans-serif;
 font-family: 'Anton', sans-serif; */
+
+/*  Bootstrap info:
+    Default breakpoints -------
+        Extra small     |       <576px
+        Small           |       ≥576px
+ 	    Medium          |       ≥768px
+        Large           |       ≥992px
+        Extra large     |       ≥1200px
+ */
+
 :root {
     --red-color: #E6563B;
     --orange-color: #EB9D3A;
