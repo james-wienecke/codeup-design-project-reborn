@@ -48,11 +48,9 @@ h5 {
 a {
     color: black !important;
 }
-.title-text {
-    font-size: 48px;
-    text-align: center;
-}
+/* the next few elements of -circle class are the large and small circles in the page. */
 .lg-circle {
+    /* the large circles between the page header and the main content body. */
     /*Circle params*/
     width: 105px;
     height: 105px;
@@ -64,12 +62,14 @@ a {
     align-items: center;
     text-align: center;
 }
+/* the text inside the large circles styled here. */
 .lg-circle span {
     font-family: 'Anton', sans-serif;
     color: white;
     font-size: 20px;
 }
 .sm-circle {
+    /* the small circles underneath featured project thumbnails in the main content. */
     font-family: 'Anton', sans-serif;
     border-radius: 50%;
     text-align: center;
@@ -82,14 +82,7 @@ a {
 .navlist  {
     text-align: center;
 }
-/*@media only screen and (min-width: 768px) {*/
-/*    .navlist {*/
-/*        text-align: right;*/
-/*    }*/
-/*    .title-text {*/
-/*        text-align: left;*/
-/*    }*/
-/*}*/
+/* .logo-image is the parent class of the element that contains the logo image in the navbar. */
 .logo-image {
     text-align: center;
 }
@@ -101,23 +94,14 @@ a {
     margin: auto;
     display: block;
 }
-/* special styling for the md+ layout to position the "codeup design" title element */
-.md-logo-case {
-    /* this margin keeps the title from clipping the icon */
-    padding-left: 120px;
-    /* this margin positions it halfway down the banner */
-    margin-top: -15px;
+/* the text next to the logo image in the navbar/page head */
+.title-text {
+    font-size: 48px;
+    text-align: center;
 }
-/* I split the actual div that holds the logo and nav items into two objects */
-.logo-bar {
-    /* .logo-bar is a general class for containing elements (when it is a container) and is invisible */
-    height: 50px;
-    position: relative;
-    top: -80px;
-    margin-bottom: -50px;
-}
+/* .white-banner is the page element outside of the main document container. */
 .white-banner {
-    /* .white-banner is visibile, and sits outside of the main document container. */
+    /* .white-banner is visibile, displaying as a white ribbon at the top of the page behind the navbar */
     height: 50px;
     position: relative;
     top: 37px;
@@ -128,6 +112,7 @@ a {
     width: 100%;
     background-color: white;
 }
+/* this class is only displayed on xs layout and puts a large gap between the large circles and the main content. */
 .xs-break {
     display: block;
     height: 100px;
@@ -177,6 +162,8 @@ a {
     /* font in tweet in the style guide is slightly smaller than the font elsewhere*/
     font-size: 12px;
 }
+/* the #sm and #md ids correspond to two elements that swap between two different hr elements between
+   the large circles group about halfway through the page */
 #small-hr {
     max-width: 60%;
 }
