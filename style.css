@@ -1,0 +1,172 @@
+/* Fonts for project */
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap');
+/* To use:
+font-family: 'Abel', sans-serif;
+font-family: 'Anton', sans-serif; */
+:root {
+    --red-color: #E6563B;
+    --orange-color: #EB9D3A;
+    --green-color: #7CB06C;
+    --blue-color: #00ABA9;
+    --light-grey: #F0F0F0;
+    --dark-grey: #E6E6E6;
+}
+body {
+    background-color: var(--light-grey) !important;
+}
+* {
+    font-family: 'Abel', sans-serif;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Anton', sans-serif;
+}
+h1 {
+    font-size: 64px;
+}
+h2 {
+    font-size: 48px;
+}
+h3 {
+    font-size: 40px;
+}
+h4 {
+    font-size: 32px;
+}
+h5 {
+    font-size: 28px;
+}
+a {
+    color: black !important;
+}
+.constrain-width {
+    max-width: 1000px;
+}
+.codeup {
+    font-size: 48px;
+}
+.lg-circle {
+    /*Circle params*/
+    width: 105px;
+    height: 105px;
+    border: 8px solid white;
+    border-radius: 50%;
+    /*Align content to center*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.lg-circle span {
+    font-family: 'Anton', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+.sm-circle {
+    font-family: 'Anton', sans-serif;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+}
+/* the navlist class is a class for the special case of the navbar/header for the small display layout. */
+.navlist  {
+    /* this margin is applied to the ul element itself to position it roughly halfway from the top of the banner*/
+    margin: .35em 0 0 0;
+}
+.navlist li {
+    /* essential styling for the list elements to keep them nicely spaced in this layout */
+    list-style: none;
+    margin: .5em;
+}
+#xs-logo, #sm-logo, #md-logo {
+    width: 105px;
+    max-width: 100%;
+    z-index: 2;
+}
+/* special styling for the md+ layout to position the "codeup design" title element */
+.md-logo-case {
+    /* this margin keeps the title from clipping the icon */
+    padding-left: 120px;
+    /* this margin positions it halfway down the banner */
+    margin-top: -15px;
+}
+/* I split the actual div that holds the logo and nav items into two objects */
+.logo-bar {
+    /* .logo-bar is a general class for containing elements (when it is a container) and is invisible */
+    height: 50px;
+    position: relative;
+    top: -80px;
+    margin-bottom: -50px;
+}
+.white-banner {
+    /* .white-banner is visibile, and sits outside of the main document container. */
+    height: 50px;
+    position: relative;
+    top: 37px;
+    margin-bottom: -40px;
+    z-index: 0;
+    /* This way it can be full-width even with the rest of the content constrained to a fraction of the
+    screen width, on large and small displays. */
+    width: 100%;
+    background-color: white;
+}
+.xs-break {
+    display: block;
+    height: 100px;
+}
+/* .work-img is the images in the featured work columns. */
+.work-img {
+    border: 4px solid var(--dark-grey);
+    max-height: 170px;
+}
+/* Styling for the articles section towards the end of the document layout */
+.article-body {
+    /* margin here gives a bit of space between the image's right side and the text's left */
+    margin: 1em 0;
+    /* line-height sets the spacing between lines for when the text wraps.
+        the default value is 1.5em so this moves them closer together */
+    line-height: 1em;
+}
+.article-image {
+    /* object-fit crops the image down in the thumbnail to a size specified in the next block */
+    object-fit: cover !important;
+    /* This determines the actual size of the thumbnail image */
+    width: 35px !important;
+    height: 35px !important;
+}
+.article-text {
+    font-family: 'Anton', sans-serif;
+}
+/* Styling for the twitter section at the end of the articles section at the end of the document */
+/* Twitter section is a div containing two elements: a div of class twitter head and a p of class twitter body */
+/* Twitter head contains the fontawesome twitter icon element and a text span */
+.twitter-head .twitter-icon {
+    /* placing a margin on top pushes the twitter icon down and allows the span's text to be aligned with icon's top */
+    margin-top: 3px;
+    /* set icon to twitter blue */
+    color: #1DA1F2;
+    /* make icon larger */
+    font-size: 1.5em;
+}
+.twitter-head span {
+    /* margin-left here puts a bit of space between the icon and the text */
+    margin-left: 1em;
+    /* vertical align moves the span up closer to the top so it can align easily with the icon */
+    vertical-align: top;
+}
+/* twitter body contains simply the p tag with the tweet's text */
+.twitter-body {
+    /* font in tweet in the style guide is slightly smaller than the font elsewhere*/
+    font-size: 12px;
+}
+#small-hr {
+    max-width: 60%;
+}
+#md-hr {
+    max-width: 100%;
+}
+.card{
+    background-color: var(--light-grey) !important;
+}
