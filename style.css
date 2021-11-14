@@ -81,7 +81,14 @@ a {
 /* .navlist is the main selector for the "nav list" of items (services, work, etc.) */
 .navlist  {
     text-align: center;
-
+}
+@media only screen and (min-width: 768px) {
+    .navlist {
+        text-align: right;
+    }
+    .title-text {
+        text-align: left;
+    }
 }
 .logo-image {
     text-align: center;
